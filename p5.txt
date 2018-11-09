@@ -54,22 +54,38 @@ Graphs. La captura que estamos viendo incluye desde la inicialización
 (registro) de la aplicación hasta su finalización, con una llamada entremedias.
 * Filtra por sip para conocer cuándo se envı́an paquetes SIP. ¿En
 qué segundos tienen lugar esos envı́os?
+- Los paquetes SIP se envían en 7,34seg 14.42seg 16.23seg 39.15seg y 55.69seg
+
 * Y los paquetes con RTP, ¿cuándo se envı́an?
+- Los paquetes RTP se envian 17.16seg a 21.8302seg y de 21.8303seg a 38.11seg
+
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 5. Analiza las dos primeras tramas de la captura.
 * ¿Qué servicio es el utilizado en estas tramas?
+- El servicio que se está utilizando es DNS
+
 * ¿Cuál es la dirección IP del servidor de nombres del ordenador
 que ha lanzado Ekiga?
+- La dirección IP del servidor lanzado por Ekiga es 80.58.61.250
+
 * ¿Qué dirección IP (de ekiga.net) devuelve el servicio de nombres?
+- La IP que devuelve el servicio es 86.64.162.35
 
 6. A continuación, hay más de una docena de tramas TCP/HTTP.
 * ¿Podrı́as decir la URL que se está pidiendo?
+- La URL pedida es:  http://ekiga.net/ip/
+
 * ¿Qué user agent (UA) la está pidiendo?
+- El UA que la pide es Ekiga
+
 * ¿Qué devuelve el servidor?
+- El servidor devuelve la IP pública del cliente que es 83.36.48.212
+
 * Si lanzamos el navegador web, por ejemplo, Mozilla Firefox, y
 vamos a la misma URL, ¿qué recibimos? ¿Qué es, entonces, lo
 que está respondiendo el servidor?
+- Recibimos la IP 193.147.49.96, esto quiere decir que el servidor esta respondiendo con la IP pública del cliente.
 
 7. Hasta la trama 45 se puede observar una secuencia de tramas del
 protocolo STUN.
