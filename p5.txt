@@ -151,39 +151,39 @@ dirección SIP?
 
 11. Una vez conectado, estudia el intercambio de tramas.
 * ¿Qué protocolo(s) se utiliza(n)? ¿Para qué sirven estos protocolos?
--
+- Se utiliza RTP y H.261. Para audio y video.
 
 * ¿Cuál es el tamaño de paquete de los mismos?
--
+- En RTP, si hablamos de audio, el tamaño es de 214 bytes en cambio para video el tamaño es variable. 
 
 * ¿Se utilizan bits de padding?
--
+- No, no se utilizan.
 
 * ¿Cuál es la periodicidad de los paquetes (en origen; nota que la
 captura es en destino)?
--
+- 160ms
 
 * ¿Cuántos bits/segundo se envı́an?
--
+- 10700 bits/seg
 
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 12. Vamos a ver más a fondo el intercambio RTP. En Telephony hay una
 opción RTP. Empecemos mirando los flujos RTP.
 * ¿Cuántos flujos hay? ¿por qué?
--
+- Al haber dos puertos distintos hay dos flujos, uno para cada puerto.
 
 * ¿Cuántos paquetes se pierden?
--
+- Ninguno.
 
 * ¿Cuál es el valor máximo del delta? ¿Y qué es lo que significa el
 valor de delta?
--
+- El valor maximo es de 1290,4 y dicho valor se refiere al retardo maximo de los paquetes.
 
 * ¿Cuáles son los valores de jitter (medio y máximo)? ¿Qué
 quiere decir eso? ¿Crees que estamos ante una conversación de
 calidad?
--
+- Jitter maximo para video es 183.10ms y el medio 153.24ms. Jitter maximo para audio es 119.64ms y el medio 42.50ms. Teniendo en cuenta estos datos podemos concluir que no estamos ante una conversacion de calidad ya que para que esto se de el jitter maximo para una conversacion no deberia exceder a 100ms
 
 13. Elige un paquete RTP de audio. Analiza el flujo de audio en Telephony
 -> RTP -> Stream Analysis.
