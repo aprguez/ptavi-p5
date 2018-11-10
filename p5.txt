@@ -216,13 +216,13 @@ esa llamada y pulsa el botón Graph.
 
 15. Identifica la trama donde se finaliza la conversación.
 * ¿Qué método SIP se utiliza?
-- 
+- El método BYE
 
 * ¿En qué trama(s)?
--
+- En las tramas 924, 925, 927 y 933
 
 * ¿Por qué crees que se envı́a varias veces?
--
+- Porque no se ha recibido el mensaje "200 OK"
 
 16. Finalmente, se cierra la aplicación de VozIP.
 * ¿Por qué aparece una instrucción SIP del tipo REGISTER?
