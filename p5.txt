@@ -209,14 +209,14 @@ dado. ¿Cuál?
 llamada de voz IP capturada en una ventana emergente. Selecciona
 esa llamada y pulsa el botón Graph.
 * ¿Cuánto dura la conversación?
--
+- 20,889seg
 
 * ¿Cuáles son sus SSRC? ¿Por qué hay varios SSRCs? ¿Hay CSRCs?
--
+- Sus SSRC son:  h.261: 43306582 g711a: BF4AFD37. Hay varios porque es una conversacion con audio y video. No hay CSRCs.
 
 15. Identifica la trama donde se finaliza la conversación.
 * ¿Qué método SIP se utiliza?
--
+- 
 
 * ¿En qué trama(s)?
 -
