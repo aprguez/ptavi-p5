@@ -226,13 +226,13 @@ esa llamada y pulsa el botón Graph.
 
 16. Finalmente, se cierra la aplicación de VozIP.
 * ¿Por qué aparece una instrucción SIP del tipo REGISTER?
--
+- Para que el campo expires vuelva a cero.
 
 * ¿En qué trama sucede esto?
--
+- En la 950.
 
 * ¿En qué se diferencia con la instrucción que se utilizó con anterioridad (al principio de la sesión)?
--
+- En que al principio el campo expires se encontraba en 3600 y ahora se ha puesto a cero.
 
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
@@ -251,17 +251,30 @@ Ekiga para ver todo el proceso3 .
 19. Observa las diferencias en el inicio de la conversación entre el entorno
 del laboratorio y el del ejercicio anterior4 :
 * ¿Se utilizan DNS y STUN? ¿Por qué?
+- No porque no son necesarios al no haber detrás un router NAT.
+
 * ¿Son diferentes el registro y la descripción de la sesión?
+- No, es lo mismo.
 
 20. Identifica las diferencias existentes entre esta conversación y la conversación anterior:
 * ¿Cuántos flujos tenemos?
+- Dos, uno por cada puerto existente. En este caso el 5070 y 33410.
+
 * ¿Cuál es su periodicidad?
+- 160ms.
+
 * ¿Cuánto es el valor máximo del delta y los valores medios y
 máximo del jitter?
+- Del flujo dirigido al puerto 5070 el valor máximo del delta es 35.61, el valor medio del jitter es 5.04 y el valor máximo del jitter es 6.76. Del flujo dirigido al puerto 33410 el valor máximo del delta es 30.53, el valor medio del jitter es 4.98 y el valor máximo del jitter es 6.68.
+
 * ¿Podrı́as reproducir la conversación desde Wireshark? ¿Cómo?
 Comprueba que poniendo un valor demasiado pequeño para el
 buffer de jitter, la conversación puede no tener la calidad necesaria.
+- Si, para ello podriamos utilizar VoIP y pulsando player podriamos reproducir la conversacion.
+
 * ¿Sabrı́as decir qué tipo de servicio ofrece sip:500@ekiga.net?
+- Es un audio, "Media type: audio"
+
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 
