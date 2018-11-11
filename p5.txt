@@ -238,16 +238,6 @@ esa llamada y pulsa el botón Graph.
 
 Captura de una sesión SIP
 
-17. Dirı́gete a la web http://www.ekiga.net con el navegador y créate
-una cuenta. Lanza Ekiga, y configúralo con los datos de la cuenta
-que te acabas de crear. Comprueba que estás conectado (En la barra
-al final de la ventana podrás ver “Connected”). Al terminar, cierra
-completamente Ekiga.
-
-18. Captura una sesión SIP de una conversación con el número SIP sip:500@ekigan.net.
-Recuerda que has de comenzar a capturar tramas antes de arrancar
-Ekiga para ver todo el proceso3 .
-
 19. Observa las diferencias en el inicio de la conversación entre el entorno
 del laboratorio y el del ejercicio anterior4 :
 * ¿Se utilizan DNS y STUN? ¿Por qué?
@@ -276,10 +266,6 @@ buffer de jitter, la conversación puede no tener la calidad necesaria.
 - Es un audio, "Media type: audio"
 
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
-
-
-21. Filtra por los paquetes SIP de la captura y guarda únicamente los
-paquetes SIP como p5.pcapng. Abre el fichero guardado para cerciorarte de que lo has hecho bien. Deberás añadirlo al repositorio.
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 [Al terminar la práctica, realiza un push para sincronizar tu repositorio GitHub]
 
